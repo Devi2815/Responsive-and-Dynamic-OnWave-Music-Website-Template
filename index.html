@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Web Page</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="loader" id="loader"></div>
+    <div id="notification" class="notification"></div>
+    <!-- <p id="message" class="message">Result not found. Please try again!</p> -->
+    <div class="parent">
+        <div class="nav">
+            <div class="icon1">
+                <img src="../ASSETS/logo-302x44.png" alt="" height="24px">
+            </div>
+            <div class="lists">
+                <ul>
+                    <li><a href="./index.html" class="transition-link">Home</a></li>
+                    <li><a href="./HTML/about.html" class="transition-link">About</a></li>
+                    <li><a href="./HTML/typography.html" class="transition-link">Typography</a></li>
+                    <li><a href="./HTML/contacts.html" class="transition-link">Contacts</a></li>
+                    <i class="fa-solid fa-magnifying-glass" class="see" onclick="Saw()"></i>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" id="Bars" onclick="barsClick()"></i>
+            <div class="search">
+                <input type="text" placeholder="Search" id="searchInput">
+                <i class="fa-solid fa-magnifying-glass" id="searchBtn" onclick="searchMe()"></i>
+            </div>
+        </div>
+        <div class="home">
+            <div class="icons2">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-square-instagram"></i>
+                <i class="fa-brands fa-facebook-messenger"></i>
+                <i class="fa-brands fa-linkedin-in"></i>
+                <i class="fa-brands fa-snapchat"></i>
+            </div>
+            <div class="content1">
+                <h1>Offering the Best Music to Listeners Worldwide</h1>
+                <button>Laern More</button>
+            </div>
+        </div>
+        <div class="content6">
+            <h1>Listen to OnWave From Anywhere!</h1>
+            <button>Listen Online</button>
+        </div>
+        <div class="content3">
+            <h1>A Variety of Music Genres</h1>
+            <p>We offer our listeners a wide variety of music genres, from House and Dubstep to Rock and Jazz. Explore music that we have to offer you below.</p>
+            <div class="cards1">
+                <div class="sub-card">
+                    <img src="../ASSETS/1House.png" alt="">
+                    <h3>House</h3>
+                    <p>We pick the best House music for our listeners.</p>
+                </div>
+                <div class="sub-card">
+                    <img src="../ASSETS/2Drumbass.png" alt="">
+                    <h3>Drum & Bass</h3>
+                    <p>Enjoy top-notch Liquid D&B and Neurofunk music on our radio.</p>
+                </div>
+                <div class="sub-card">
+                    <img src="../ASSETS/3dubstep.png" alt="">
+                    <h3>Dubstep</h3>
+                    <p>Dozens of new Dubstep tracks are aired regularly on OnWave.</p>
+                </div>
+                <div class="sub-card">
+                    <img src="../ASSETS/4trance.png" alt="">
+                    <h3>Trance</h3>
+                    <p>Our DJs broadcast various Trance tracks on onWave.</p>
+                </div>
+                <div class="sub-card">
+                    <img src="./ASSETS/5breaks.png" alt="">
+                    <h3>Breaks</h3>
+                    <p>Listen to the top-notch Breaks selection on OnWave.</p>
+                </div>
+                <div class="sub-card">
+                    <img src="./ASSETS/6techno.png" alt="">
+                    <h3>Techno</h3>
+                    <p>Discover all subgenres of legendary Techno on our radio.</p>
+                </div>
+                <div class="sub-card">
+                    <img src="./ASSETS/7rock.png" alt="">
+                    <h3>Rock</h3>
+                    <p>Weekly concerts and rock exclusives - only on onWave.</p>
+                </div>
+                <div class="sub-card">
+                    <img src="./ASSETS/8jazz.png" alt="">
+                    <h3>Jazz</h3>
+                    <p>We pick the best Jazz music for our listeners.</p>
+                </div>
+            </div>
+        </div>
+        <div class="content4">
+            <h1>Schedule of Radio Shows</h1>
+            <p>Our radio has more than 20 radio shows aired weekly. They include exclusive guest mixes,live
+                performances, interviews, and appearances by world-famous DJs and musicians</p>
+            <div class="cards2">
+                <div class="sub-card2">
+                    <div class="nav2">
+                        <div class="con">
+                            <p>by</p>
+                            <p id="cv">Leona Burns</p>
+                        </div>
+                        <p>07:00am - 10:00am</p>
+                    </div>
+                    <img src="./ASSETS/blog1.jpeg" alt="">
+                    <button>Program</button>
+                    <h3>OnWave Morning Time with Leona Burns</h3>
+                    <p>Leona Burns is ready to charge up your morning with great EDM & Rock music! Tune in to OnWave to get your dose of morning fun with trending hits and the latest news.</p>
+                </div>
+                <div class="sub-card2">
+                    <div class="nav2">
+                        <div class="con">
+                            <p>by</p>
+                            <p id="cv">Marth Ryna</p>
+                        </div>
+                        <p>10:00am - 12:00am</p>
+                    </div>
+                    <img src="./ASSETS/blog2.jpeg" alt="">
+                    <button>Interview</button>
+                    <h3>Up in the Air with Martha Ryna (Special Guest: Ray Johnson)</h3>
+                    <p>On Saturday, Ray Johnson, a renowned DJ and musician will visit Martha Ryan’s show “Up in the Air” to answer some tricky questions about his career and personal life.</p>
+                </div>
+                <div class="sub-card2">
+                    <div class="nav2">
+                        <div class="con">
+                            <p>by</p>
+                            <p id="cv">Marth Ryna</p>
+                        </div>
+                        <p>12:00am - 03:00pm</p>
+                    </div>
+                    <img src="./ASSETS/blog3.jpg" alt="">
+                    <button>Live</button>
+                    <h3>Pixie Lott and The Rollers (Live at Rush Club, May 2018)</h3>
+                    <p>This weekend’s live concert features an incredible performance by Pixie Lott and her group The Rollers at Rush Club in Seattle, WA, which took place on May 28, 2018.</p>
+                </div>
+            </div>
+            <button>view All Schedule</button>
+        </div>
+        <div class="content5">
+            <h1>Why You Should Listen to OnWave</h1>
+            <div class="cards3">
+                <div class="sub-card3">
+                    <i class="fa-regular fa-star"></i>
+                    <h3>Best Music Selection</h3>
+                    <p>OnWave offers its listeners the best music in various styles, from electronic to rock music.</p>
+                </div>
+                <div class="sub-card3">
+                    <i class="fa-regular fa-newspaper"></i>
+                    <h3>Latest News</h3>
+                    <p>Our hosts are always ready to share with you the latest regional and global news and updates.</p>
+                </div>
+                <div class="sub-card3">
+                    <i class="fa-regular fa-sun"></i>
+                    <h3>Available Everywhere</h3>
+                    <p>You can listen to our radio both online and offline via any devices, gadgets or radios.</p>
+                </div>
+                <div class="sub-card3">
+                    <i class="fa-solid fa-medal"></i>
+                    <h3>Best DJ Shows</h3>
+                    <p>OnWave regularly broadcasts shows from the best DJs in the world that play exclusive tracks for you.</p>
+                </div>
+            </div>
+        </div>
+        <div class="content6">
+            <h1>Listen to OnWave From Anywhere!</h1>
+            <button>Listen Online</button>
+        </div>
+        <div class="content7">
+            <h1>Cities and Frequencies</h1>
+            <img src="./ASSETS/cities-map-1182x661.png" alt="">
+        </div>
+        <img src="./ASSETS/monstroid_big_02.jpeg" alt="">
+        <div class="footer">
+            <div class="sub-footer">
+                <div class="content8">
+                    <img src="./ASSETS/logo-footer-360x52.png" alt="">
+                    <p>OnWave is one of the most popular radio stations broadcasting the best EDM & Rock tracks, shows, and performances worldwide. We were founded in 1999 to promote original Electronic, Jazz, and Rock music.</p>
+                </div>
+                <div class="contact">
+                    <h3>Contact Information</h3>
+                    <div class="sub1">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <div class="paras">
+                            <p>2130 Fluton Street,</p>
+                            <p>San Diego, CA 94117-1080 USA </p>
+                        </div>
+                    </div>
+                    <div class="sub1">
+                        <i class="fa-solid fa-phone"></i>
+                        <div class="paras">
+                            <p>1-800-1234-567</p>
+                            <p>1-800-1234-567</p>
+                        </div>
+                    </div>
+                    <div class="sub1">
+                        <i class="fa-regular fa-envelope"></i>
+                        <div class="paras">
+                            <p>info@demolink.org</p>
+                        </div>
+                    </div>
+                    <div class="icons3">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-square-instagram"></i>
+                        <i class="fa-brands fa-facebook-messenger"></i>
+                        <i class="fa-brands fa-linkedin-in"></i>
+                        <i class="fa-brands fa-snapchat"></i>
+                    </div>
+                </div>
+                <div class="gallery">
+                    <h3>Gallery</h3>
+                    <div class="img-gallery">
+                        <img src="./ASSETS/insta-gallery1.jpg" alt="">
+                        <img src="./ASSETS/insta-gallery2.jpeg" alt="">
+                        <img src="./ASSETS/insta-gallery3.jpg" alt="">
+                        <img src="./ASSETS/insta-gallery4.jpeg" alt="">
+                        <img src="./ASSETS/insta-gallery5.jpeg" alt="">
+                        <img src="./ASSETS/insta-gallery6.jpg" alt="">
+                    </div>
+                </div>
+                <div class="news">
+                    <h3>Newsletter</h3>
+                    <p>Keep up with our always upcoming news and updates. Enter your e-mail and subscribe to our newsletter.</p>
+                    <input type="email" placeholder="Enter your e-mail" id="eye" required>
+                    <button onclick="subscribe()" id="subscri">Subscribe</button>
+                </div>
+            </div>
+            <p>© 2024 OnWave. All Rights Reserved. Design by TemplateMonster</p>
+            <!-- <i class="fa-regular fa-message" id="message"></i> -->
+            <i class="fa-regular fa-message" id="message" onclick="chatBox()" style="color: white; background-color: blueviolet;width: 50px; height: 50px; text-align: center; padding: 15px 10px; font-size: 25px; border-radius: 50%; position: fixed; bottom: 30px; right:30px;"></i>
+        </div>
+        <div class="chartCard" >
+            <div class="live">
+                <h1>Live Chat</h1>
+                <div class="monster">
+                    <img src="./ASSETS/good.png" height="70px" width="40px" alt="">
+                    <div class="paragraph">
+                        <p>monster Bot</p>
+                        <h5>Hello!</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="chatting">
+                <i class="fa-regular fa-user"></i>
+                <p>Have a question? Please fill in the form below, and our chat agent will gladly help you!</p>
+                <div class="namePara">
+                    <p>Name:</p>
+                    <input type="text" placeholder="Enter your Name" required>
+                </div>
+                <div class="namePara2">
+                    <p>E-mail:</p>
+                    <input type="email" placeholder="Enter your E-mail" required>
+                </div>
+                <i class="fa-regular fa-paper-plane" id="send" onclick="sendRequest()"></i>
+            </div>
+            <h3 id="startChat" onclick="chatStart()">Start the chat</h3>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="./JAVASCRIPT/script.js"></script>
+</body>
+</html>
